@@ -4,8 +4,8 @@ To start your project:
 
   * Install dependencies with `mix deps.get`
   * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-  * Install Node.js dependencies with `cd assets && npm install`
-  * Set up Github API Token: https://developer.github.com/v4/guides/forming-calls/#authenticating-with-graphql
+  * Optional: Install Node.js dependencies with `cd assets && npm install`
+  * Optional: Set up Github API Token: https://developer.github.com/v4/guides/forming-calls/#authenticating-with-graphql
   * Copy .env_sample to .env; put the API token in the ENV var; run `source .env`
   * Start Iex: `iex -S mix`
 
