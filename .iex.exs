@@ -1,1 +1,2 @@
 alias BatchInsertWorkshop.GithubApi
+alias BatchInsertWorkshop.Payloads.GithubPayload

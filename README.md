@@ -1,20 +1,35 @@
 # Batch Insert Workshop
 
-To start your Phoenix server:
+To start your project:
 
   * Install dependencies with `mix deps.get`
   * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
   * Install Node.js dependencies with `cd assets && npm install`
-  * Start Phoenix endpoint with `mix phx.server`
+  * Set up Github API Token: https://developer.github.com/v4/guides/forming-calls/#authenticating-with-graphql
+  * Copy .env_sample to .env; put the API token in the ENV var; run `source .env`
+  * Start Iex: `iex -S mix`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+  ## Table Structure for Part 1
 
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
+  * Languages
+  * Repos
+  * Repo Languages
 
-## Learn more
+  ## Instructions
 
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+  1. Retrieve Unique Languages from JSON Payload.
+  2. Insert all Unique Languages in one query, returning values (hint: Repo.insert_all with on_conflict & returning clause)
+  3. Insert all Repos, and return all values from the Insert.
+  4. Loop back through the payload, mapping the IDs returned from Languages and Repos (Steps 2 & 3)
+  5. Insert these into the repo_languages table.
+
+  ## Where to begin:
+
+  1. If you have a Github API Token set up (from Start your project section): You can run `GithubApi.repos` to fetch the first 10 repos. The file is located at lib/batch_insert_workshop/services/github_api.ex`
+
+  OR
+
+  2. If you don't have a token set up, you can get a sample payload from: `GithubPayload.sample`
+
+
+
