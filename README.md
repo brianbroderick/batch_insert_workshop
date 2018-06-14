@@ -9,12 +9,6 @@ To start your project:
   * Copy .env_sample to .env; put the API token in the ENV var; run `source .env`
   * Start Iex: `iex -S mix`
 
-  ## Tables to use for Part 1
-
-  * Languages
-  * Repos
-  * Repo Languages
-
   ## Instructions
 
   1. Retrieve Unique Languages from JSON Payload.
@@ -22,6 +16,7 @@ To start your project:
   3. Insert all Repos, and return all values from the Insert.
   4. Loop back through the payload, mapping the IDs returned from Languages and Repos (Steps 2 & 3)
   5. Insert these into the repo_languages table.
+  6. Write tests
 
   ## Where to begin:
 
@@ -30,6 +25,14 @@ To start your project:
   OR
 
   2. If you don't have a token set up, you can get a sample payload from: `GithubPayload.sample`
+
+  ## Tables to use for Part 1
+
+  * Languages
+  * Repos
+  * Repo Languages
+
+  Located at: batch_insert_workshop/model/
 
 
 
