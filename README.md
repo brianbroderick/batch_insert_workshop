@@ -9,7 +9,7 @@ To start your project:
   * Copy .env_sample to .env; put the API token in the ENV var; run `source .env`
   * Start Iex: `iex -S mix`
 
-  ## Table Structure for Part 1
+  ## Tables to use for Part 1
 
   * Languages
   * Repos
