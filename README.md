@@ -1,4 +1,4 @@
-# BatchInsertWorkshop
+# Batch Insert Workshop
 
 To start your Phoenix server:
 
